@@ -5,7 +5,6 @@ import android.app.Application;
 import com.famgy.presenter.AppAction;
 import com.famgy.presenter.AppActionImpl;
 
-import java.security.PublicKey;
 
 /**
  * Created by famgy on 3/6/18.

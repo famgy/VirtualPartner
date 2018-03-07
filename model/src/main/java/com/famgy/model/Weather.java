@@ -1,36 +1,26 @@
 package com.famgy.model;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+import java.util.List;
+
 /**
  * Created by famgy on 3/6/18.
  */
 
 public class Weather {
 
-    private int id;
-    private String place;
-    private String status;
+    public String status;
 
-    public int getId() {
-        return id;
-    }
+    public Basic basic;
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public AQI aqi;
 
-    public String getPlace() {
-        return place;
-    }
+    public Now now;
 
-    public void setPlace(String place) {
-        this.place = place;
-    }
+    public Suggestion suggestion;
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
+    @SerializedName("daily_forecast")
+    public List<Forecast> forecastList;
 }

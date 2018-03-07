@@ -9,4 +9,6 @@ import com.famgy.model.Weather;
 public interface AppAction {
 
     public void showWeacherInfo(Weather weather);
+
+    public void requestWeatherInfo(final ActionCallbackListener<Weather> listener);
 }
