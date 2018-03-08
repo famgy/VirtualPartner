@@ -8,7 +8,9 @@ import com.famgy.model.Weather;
 
 public interface AppAction {
 
-    public void showWeacherInfo(Weather weather);
-
     public void requestWeatherInfo(final ActionCallbackListener<Weather> listener);
+
+    public void requestBingPic(final ActionCallbackListener<String> listener);
+
+    public Weather getWeatherInfo(final String weatherInfo);
 }

@@ -1,5 +1,8 @@
 package com.famgy.presenter;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.widget.Toast;
 
 import com.famgy.model.Weather;
@@ -18,12 +21,33 @@ import okhttp3.Response;
 
 public class AppActionImpl implements AppAction {
 
-    private Weather weather;
+    private Context context;
+
+    public AppActionImpl(Context context) {
+        this.context = context;
+    }
 
     @Override
-    public void showWeacherInfo(Weather weather) {
-        String place = weather.getPlace();
-        String status = weather.getStatus();
+    public void requestBingPic(final ActionCallbackListener<String> listener) {
+        String requestBingPic = "http://guolin.tech/api/bing_pic";
+        HttpUtil.sendOkHttpRequest(requestBingPic, new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                e.printStackTrace();
+                listener.onFailure(ErrorEvent.ACTION_FAILED, "请求url失败");
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                final String bingPic = response.body().string();
+
+                SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+                editor.putString("bing_pic", bingPic);
+                editor.apply();
+
+                listener.onSuccess(bingPic);
+            }
+        });
     }
 
     @Override
@@ -39,9 +63,19 @@ public class AppActionImpl implements AppAction {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 final String responseText = response.body().string();
-                weather = Utility.handleWeatherResponse(responseText);
+
+                SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+                editor.putString("weather_info", responseText);
+                editor.apply();
+
+                Weather weather = Utility.handleWeatherResponse(responseText);
                 listener.onSuccess(weather);
             }
         });
+    }
+
+    @Override
+    public Weather getWeatherInfo(final String weatherInfo) {
+        return Utility.handleWeatherResponse(weatherInfo);
     }
 }

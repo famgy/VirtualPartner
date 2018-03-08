@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:textColor="#fff"
-        android:textSize="60sp"
-        android:text="3℃"/>
+        android:textSize="60sp" />
 
     <TextView
         android:id="@+id/text_now_info"
@@ -20,7 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:textColor="#fff"
-        android:textSize="20sp"
-        android:text="阴"/>
+        android:textSize="20sp" />
 
 </LinearLayout>

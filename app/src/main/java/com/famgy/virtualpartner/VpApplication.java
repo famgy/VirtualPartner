@@ -18,7 +18,7 @@ public class VpApplication extends Application{
     public void onCreate() {
         super.onCreate();
 
-        appAction = new AppActionImpl();
+        appAction = new AppActionImpl(this);
     }
 
     public AppAction getAppAction() {
