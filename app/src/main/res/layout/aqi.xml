@@ -33,7 +33,7 @@
                 android:layout_centerInParent="true">
 
                 <TextView
-                    android:id="@+id/aqi_text"
+                    android:id="@+id/text_aqi_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -64,7 +64,7 @@
                 android:layout_centerInParent="true">
 
                 <TextView
-                    android:id="@+id/pm25_text"
+                    android:id="@+id/text_api_pm25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

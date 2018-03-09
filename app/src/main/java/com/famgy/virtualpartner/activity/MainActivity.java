@@ -14,6 +14,8 @@ public class MainActivity extends BaseActivity {
 
     private TextView tv;
     private Button btn_weather_login;
+    private Button btn_fanye_example;
+    private Button btn_weather_info;
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -38,6 +40,9 @@ public class MainActivity extends BaseActivity {
 
     private void initView() {
         btn_weather_login = (Button) findViewById(R.id.btn_weather_login);
+        btn_fanye_example = (Button) findViewById(R.id.btn_fanye_example);
+        btn_weather_info = (Button) findViewById(R.id.btn_weather_info);
+
 
         // Example of a call to a native method
         tv = (TextView) findViewById(R.id.sample_text);
@@ -48,6 +53,18 @@ public class MainActivity extends BaseActivity {
         //btn_weather_login.setEnabled(false);
 
         Intent intent = new Intent(context, WeatherActivity.class);
+        startActivity(intent);
+    }
+
+    public void toFanye(View view) {
+
+        Intent intent = new Intent(context, FanyeActivity.class);
+        startActivity(intent);
+    }
+
+    public void toWeatherInfo(View view) {
+        //btn_weather_login.setEnabled(false);
+        Intent intent = new Intent(context, WeatherPagesActivity.class);
         startActivity(intent);
     }
 

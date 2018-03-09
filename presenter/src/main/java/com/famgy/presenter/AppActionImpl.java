@@ -3,7 +3,6 @@ package com.famgy.presenter;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.widget.Toast;
 
 import com.famgy.model.Weather;
 import com.famgy.presenter.util.HttpUtil;

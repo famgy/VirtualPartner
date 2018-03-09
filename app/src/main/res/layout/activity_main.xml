@@ -27,4 +27,20 @@
         android:text="天气情况"
         android:onClick="toWeather"/>
 
+    <Button
+        android:id="@+id/btn_weather_info"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天气信息"
+        android:onClick="toWeatherInfo"/>
+
+    <Button
+        android:id="@+id/btn_fanye_example"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="翻页效果"
+        android:onClick="toFanye"/>
+
 </LinearLayout>

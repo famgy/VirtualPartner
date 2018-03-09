@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_weather"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.famgy.virtualpartner.activity.WeatherActivity">
@@ -16,38 +17,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
-            <ScrollView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scrollbars="none">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text_title_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="40sp"/>
 
-                    <TextView
-                        android:id="@+id/text_title_city"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:layout_gravity="center"
-                        android:textColor="#fff"
-                        android:textSize="40sp"/>
-
-                    <include layout="@layout/now" />
-                    <include layout="@layout/forecast" />
-                    <include layout="@layout/aqi" />
-                    <include layout="@layout/suggestion" />
-                </LinearLayout>
-            </ScrollView>
-
-        </LinearLayout>
+                <include layout="@layout/now" />
+                <include layout="@layout/forecast" />
+                <include layout="@layout/aqi" />
+                <include layout="@layout/suggestion" />
+            </LinearLayout>
+        </ScrollView>
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
