@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.famgy.model.Forecast;
-import com.famgy.model.Weather;
+import com.famgy.modle.weather.Forecast;
+import com.famgy.modle.weather.Weather;
 import com.famgy.presenter.ActionCallbackListener;
 import com.famgy.presenter.AppAction;
 import com.famgy.virtualpartner.R;
@@ -38,12 +38,14 @@ public class WeatherObject {
     public View view;
     Context context;
     Activity activity;
+    String address;
     AppAction appAction;
 
-    public WeatherObject(Context context, Activity activity, AppAction appAction) {
+    public WeatherObject(Context context, Activity activity, AppAction appAction, String address) {
         this.context = context;
         this.activity = activity;
         this.appAction = appAction;
+        this.address = address;
         view = View.inflate(context, R.layout.activity_weather, null);
 
         initView();
@@ -115,7 +117,7 @@ public class WeatherObject {
 
     //http://guolin.tech/api/weather?cityid=CN101010100&key=bc0418b57b2d4918819d3974ac1285d9
     private void updateWeatherInfo() {
-        appAction.requestWeatherInfo(new ActionCallbackListener<Weather>() {
+        appAction.requestWeatherInfo(address, new ActionCallbackListener<Weather>() {
             @Override
             public void onSuccess(final Weather weather) {
                 activity.runOnUiThread(new Runnable() {

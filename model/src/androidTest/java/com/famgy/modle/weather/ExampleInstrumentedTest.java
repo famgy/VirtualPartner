@@ -1,4 +1,4 @@
-package com.famgy.model;
+package com.famgy.modle.weather;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

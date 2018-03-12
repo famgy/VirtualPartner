@@ -1,4 +1,4 @@
-package com.famgy.model;
+package com.famgy.modle.weather;
 
 public class AQI {
 
