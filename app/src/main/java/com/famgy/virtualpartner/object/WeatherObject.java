@@ -76,7 +76,8 @@ public class WeatherObject {
 
         final String weatherInfo = prefs.getString("weather_info", null);
         if (weatherInfo != null) {
-            loadWeatherInfo(weatherInfo);
+            //loadWeatherInfo(weatherInfo);
+            updateWeatherInfo();
         } else {
             updateWeatherInfo();
         }

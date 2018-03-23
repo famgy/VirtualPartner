@@ -3,6 +3,7 @@ package com.famgy.presenter;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import com.famgy.modle.weather.Weather;
 import com.famgy.presenter.util.HttpUtil;
@@ -30,6 +31,8 @@ public class AppActionImpl implements AppAction {
     @Override
     public void requestBingPic(final ActionCallbackListener<String> listener) {
         String requestBingPic = "http://guolin.tech/api/bing_pic";
+
+        Log.e("=====BINGPIC-send=====", requestBingPic);
         HttpUtil.sendOkHttpRequest(requestBingPic, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -45,6 +48,8 @@ public class AppActionImpl implements AppAction {
                 editor.putString("bing_pic", bingPic);
                 editor.apply();
 
+                Log.e("====BINGPIC-result====", bingPic);
+
                 listener.onSuccess(bingPic);
             }
         });
@@ -52,6 +57,7 @@ public class AppActionImpl implements AppAction {
 
     @Override
     public void requestWeatherInfo(final String weatherUrl, final ActionCallbackListener<Weather> listener) {
+        Log.e("====WEATHER-send====", weatherUrl);
         HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {

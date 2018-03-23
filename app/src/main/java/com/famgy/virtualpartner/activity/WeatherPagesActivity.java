@@ -9,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.famgy.modle.area.County;
 import com.famgy.virtualpartner.R;
@@ -54,18 +56,32 @@ public class WeatherPagesActivity extends BaseActivity {
     //http://guolin.tech/api/weather?cityid=CN101010100&key=bc0418b57b2d4918819d3974ac1285d9
     private ArrayList<View> getPages () {
         ArrayList<View> views = new ArrayList<>();
-        ArrayList<County> countyArrayList = (ArrayList<County>) DataSupport.where("countyName = ?", "隰县").find(County.class);
+        ArrayList<County> countyArrayList = (ArrayList<County>) DataSupport.where("countyName = ?", "临汾").find(County.class);
         if (countyArrayList.size() <= 0) {
             Log.e("VTRTUAL_PARTNER", "Not find county!");
             return null;
         }
         County county = countyArrayList.get(0);
 
-        WeatherObject weatherObject= new WeatherObject(context, this, appAction, county.getWeather_url());
+        final String weatherUrl = "http://guolin.tech/api/weather?cityid=" + county.getWeather_Id() + "&key=bc0418b57b2d4918819d3974ac1285d9";
+        Log.e("====WEATHER_URL====", weatherUrl);
+        WeatherObject weatherObject= new WeatherObject(context, this, appAction, weatherUrl);
         views.add(weatherObject.view);
 
-        //WeatherObject weatherObject2= new WeatherObject(context, this, appAction);
-        //views.add(weatherObject2.view);
+
+        ArrayList<County> countyArrayList2 = (ArrayList<County>) DataSupport.where("countyName = ?", "北京").find(County.class);
+        if (countyArrayList2.size() <= 0) {
+            Log.e("VTRTUAL_PARTNER", "Not find county!");
+            return null;
+        }
+        County county2 = countyArrayList2.get(0);
+
+        final String weatherUrl2 = "http://guolin.tech/api/weather?cityid=" + county2.getWeather_Id() + "&key=bc0418b57b2d4918819d3974ac1285d9";
+        Log.e("====WEATHER_URL====", weatherUrl2);
+
+
+        WeatherObject weatherObject2= new WeatherObject(context, this, appAction, weatherUrl2);
+        views.add(weatherObject2.view);
 
         return views;
     }

@@ -38,7 +38,7 @@ public class Utility {
         try {
             ArrayList<String> arrayList = new ArrayList();
             JSONArray allProvinces = new JSONArray(response);
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < allProvinces.length(); i++) {
                 JSONObject provinceObject = allProvinces.getJSONObject(i);
                 Province province = new Province();
                 province.setId(provinceObject.getInt("id"));
@@ -97,9 +97,8 @@ public class Utility {
                 county.setId(countyObject.getInt("id"));
                 county.setWeather_Id(countyObject.getString("weather_id"));
                 county.setCountyName(countyObject.getString("name"));
-                county.setWeather_url(address);
 
-                if (countyObject.getString("name").equals("隰县")) {
+                if (countyObject.getString("name").equals("临汾")) {
                     Log.e("=======TEST=========", county.getCountyName() + ", " + county.getId() + ", " + county.getWeather_Id());
                 }
 
