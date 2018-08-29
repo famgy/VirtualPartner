@@ -1,3 +1,56 @@
 <resources>
     <string name="app_name">Virtual Partner</string>
+
+    <string name="SoC">SoC</string>
+    <string name="Device">Device</string>
+    <string name="Display">Display</string>
+    <string name="Battery">Battery</string>
+    <string name="Telephony">Telephony</string>
+    <string name="Sensor">Sensor</string>
+    <string name="Root" translatable="false">Root</string>
+
+    <string name="AndroidVersion">Android Version</string>
+    <string name="APILevel">API Level</string>
+    <string name="SecurityPatch">Security Patch</string>
+    <string name="KernelVersion">Kernel Version</string>
+    <string name="KernelArch">Kernel Arch</string>
+
+    <string name="CPUModel">CPU Model</string>
+    <string name="CPUCores">CPU Cores</string>
+    <string name="CPUFreq">CPU Freq</string>
+    <string name="CPUGovernor" translatable="false">CPU Governor</string>
+    <string name="BogoMIPS" translatable="false">BogoMIPS</string>
+    <string name="GPUVendor">GPU Vendor</string>
+    <string name="GPURenderer">GPU Renderer</string>
+    <string name="OpenGLVersion">OpenGL Version</string>
+    <string name="BogoMIPSInfoTitle">What\'s BogoMIPS?</string>
+    <string name="BogoMIPSInfoMessage">BogoMips (from \"bogus\" and MIPS) is an unscientific measurement of CPU speed made by the Linux kernel when it boots to calibrate an internal busy-loop. An often-quoted definition of the term is \"the number of million times per second a processor can do absolutely nothing\"\n\n// Higher is better.\n\nSource: en.wikipedia.org</string>
+
+    <string name="Model">Model</string>
+    <string name="Manufacturer">Manufacturer</string>
+    <string name="RAM" translatable="false">RAM</string>
+    <string name="InternalStorage">Internal Storage</string>
+    <string name="ExternalStorage">External Storage</string>
+    <string name="RootAccess">Root Access</string>
+    <string name="SELinux" translatable="false">SELinux</string>
+
+    <string name="Resolution">Resolution</string>
+    <string name="DPI">DPI</string>
+    <string name="ScreenSize">Screen size</string>
+    <string name="RefreshValue">Refresh value</string>
+    <string name="Brightness">Brightness</string>
+
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Unknown">Unknown</string>
+    <string name="Close">Close</string>
+    <string name="NotMounted">Not mounted</string>
+    <string name="ThereAreNothing">There\'s nothing here for now, come back in a bit.</string>
+
+    <string name="msg_on">Powering down your device with NetGuard enabled, will automatically start NetGuard on powering up your device</string>
+    <string name="msg_vpn_cancelled">VPN connection cancelled\nDid you configure another VPN to be an always-on VPN?</string>
+    <string name="title_root">root</string>
+    <string name="title_mediaserver">mediaserver</string>
+    <string name="title_nobody">nobody</string>
+
 </resources>

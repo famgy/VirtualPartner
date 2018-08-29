@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/home_view"
+    android:background="?attr/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -28,11 +28,51 @@
         android:onClick="toWeatherInfo"/>
 
     <Button
-        android:id="@+id/btn_fanye_example"
+        android:id="@+id/btn_fanye"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="翻页效果"
+        android:text="翻页"
         android:onClick="toFanye"/>
+
+    <Button
+        android:id="@+id/btn_phone_info"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机信息"
+        android:onClick="toPhoneInfo"/>
+
+    <Button
+        android:id="@+id/btn_vpn_manager"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VPN管理"
+        android:onClick="toVpnManager"/>
+
+    <Button
+        android:id="@+id/btn_call_history"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通话记录"
+        android:onClick="toCallHistory"/>
+
+    <Button
+        android:id="@+id/btn_sqlite_test"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQLite测试"
+        android:onClick="toSQLiteTest"/>
+
+    <Button
+        android:id="@+id/btn_line_decript"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Line解密"
+        android:onClick="toLineDecript"/>
 
 </LinearLayout>

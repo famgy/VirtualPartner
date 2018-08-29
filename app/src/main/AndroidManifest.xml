@@ -3,7 +3,12 @@
     package="com.famgy.virtualpartner">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
+    <!-- 低版本使用该权限 -->
     <application
         android:name=".VpApplication"
         android:allowBackup="true"
@@ -12,15 +17,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.FanyeActivity" />
-        <activity android:name=".activity.WeatherPagesActivity"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FanyeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WeatherPagesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PhoneActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.VpnActivity" />
+
+        <service
+            android:name=".service.PlusVpnService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_VPN_SERVICE" />
+
+        <activity android:name=".activity.CallHistoryActivity" />
+        <activity android:name=".activity.SQLiteTestActivity" />
+        <activity android:name=".activity.LineDecriptActivity"></activity>
     </application>
 
 </manifest>

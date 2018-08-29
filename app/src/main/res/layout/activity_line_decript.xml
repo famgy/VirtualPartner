@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LineDecriptActivity">
+
+    <TextView
+        android:id="@+id/tv_androidID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android ID == "
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/tv_cipherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_androidID"
+        android:layout_marginTop="20dp"
+        android:text="密 文："
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/et_cipherText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C7ansub6UIYsvqnunSjizA=="
+        android:layout_alignBaseline="@id/tv_cipherText"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_cipherText"/>
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cipherText"
+        android:layout_marginTop="30dp"
+        android:text="明 文："
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这里是默认值"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_text"
+        android:layout_alignBaseline="@id/tv_text"/>
+
+    <Button
+        android:id="@+id/btn_getContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:layout_marginTop="10dp"
+        android:text="生成明文"
+        android:gravity="center" />
+
+
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cipherText"
+        android:layout_marginTop="30dp"
+        android:text="明 文："
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/tv_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ture"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_text"
+        android:layout_alignBaseline="@id/tv_text"/>
+
+    <TextView
+        android:id="@+id/tv_cipherText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_androidID"
+        android:layout_marginTop="20dp"
+        android:text="密 文："
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/et_cipherText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="这里是密文"
+        android:layout_alignBaseline="@id/tv_cipherText"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_cipherText"/>
+
+    <Button
+        android:id="@+id/btn_getContent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_text"
+        android:layout_marginTop="10dp"
+        android:text="生成密文"
+        android:gravity="center" />
+
+</RelativeLayout>

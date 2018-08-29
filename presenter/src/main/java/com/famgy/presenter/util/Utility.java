@@ -21,16 +21,16 @@ import java.util.ArrayList;
 public class Utility {
 
     public static Weather handleWeatherResponse(String response) {
+
         try {
             JSONObject jsonObject = new JSONObject(response);
             JSONArray jsonArray = jsonObject.getJSONArray("HeWeather");
             String weatherContent = jsonArray.getJSONObject(0).toString();
 
             return new Gson().fromJson(weatherContent, Weather.class);
-        } catch (JSONException e) {
+    } catch (JSONException e) {
             e.printStackTrace();
         }
-
         return null;
     }
 
@@ -48,7 +48,7 @@ public class Utility {
                     Log.e("=======TEST=========", "shanxi");
                 }
 
-                province.save();
+                //province.save();
 
                 arrayList.add(address + "/" + provinceObject.getInt("id"));
             }
@@ -75,7 +75,7 @@ public class Utility {
                     Log.e("=======TEST=========", "linfen");
                 }
 
-                city.save();
+                //city.save();
 
                 arrayList.add(address + "/" + CityObject.getInt("id"));
             }
@@ -102,7 +102,7 @@ public class Utility {
                     Log.e("=======TEST=========", county.getCountyName() + ", " + county.getId() + ", " + county.getWeather_Id());
                 }
 
-                county.save();
+                //county.save();
 
                 //Log.e("=======TEST=========", county.getCountyName() + ", " + county.getId() + ", " + county.getWeather_Id());
             }

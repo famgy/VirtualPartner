@@ -16,7 +16,7 @@ import com.famgy.virtualpartner.R;
 
 import java.util.ArrayList;
 
-public class FanyeActivity extends AppCompatActivity {
+public class FanyeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

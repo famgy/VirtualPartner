@@ -42,3 +42,23 @@ target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
+
+
+# jni_vpn.so
+add_library( # Sets the name of the library.
+             jni_vpn
+
+             # Sets the library as a shared library.
+             SHARED
+
+             # Provides a relative path to your source file(s).
+             src/main/jni/vpn/jni_vpn.c
+             src/main/jni/vpn/common.c
+             src/main/jni/vpn/vpn_main.c )
+
+target_link_libraries( # Specifies the target library.
+                       jni_vpn
+
+                       # Links the target library to the log library
+                       # included in the NDK.
+                       ${log-lib} )

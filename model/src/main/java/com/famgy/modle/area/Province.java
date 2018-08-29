@@ -1,12 +1,10 @@
 package com.famgy.modle.area;
 
-import org.litepal.crud.DataSupport;
-
 /**
  * Created by famgy on 3/12/18.
  */
 
-public class Province extends DataSupport{
+public class Province{
 
     private int id;
 
