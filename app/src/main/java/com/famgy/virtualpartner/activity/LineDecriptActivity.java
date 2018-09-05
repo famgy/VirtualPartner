@@ -3,6 +3,7 @@ package com.famgy.virtualpartner.activity;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,13 +17,14 @@ public class LineDecriptActivity extends AppCompatActivity {
 
     private TextView tv_androidID = null;
     private EditText et_cipherText = null;
-    private TextView et_cipherText2 = null;
+    private TextView tv_cipherText2 = null;
     private TextView tv_content = null;
-    private EditText tv_content2 = null;
+    private EditText et_content2 = null;
     private Button btn_getContent = null;
     private Button btn_getContent2 = null;
     private final Long longValue = 15485863L;
     private String content = null;
+    private String content2 = null;
     private CharSequence cs = null;
 
     @Override
@@ -48,16 +50,20 @@ public class LineDecriptActivity extends AppCompatActivity {
         });
 
 
-        tv_content2 = (EditText) findViewById(R.id.tv_content2);
-        et_cipherText2 = (TextView) findViewById(R.id.et_cipherText2);
+        et_content2 = (EditText) findViewById(R.id.et_content2);
+        tv_cipherText2 = (TextView) findViewById(R.id.tv_cipherText2);
         btn_getContent2 = (Button) findViewById(R.id.btn_getContent2);
 
 
         btn_getContent2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                content = AESEncryptUtil.encrypt(Long.valueOf(longValue),tv_content2.getText().toString().trim(),cs.toString());
-                et_cipherText2.setText(content);
+                content2 = AESEncryptUtil.encrypt(Long.valueOf(longValue),et_content2.getText().toString().trim(),cs.toString());
+
+                Log.d("LineDecriptActivity", "\n");
+                Log.d("LineDecriptActivity",content2);
+                Log.d("LineDecriptActivity", "\n");
+                tv_cipherText2.setText(content2);
             }
         });
     }

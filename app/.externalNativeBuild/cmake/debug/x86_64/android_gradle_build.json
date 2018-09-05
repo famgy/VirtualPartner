@@ -1,0 +1,69 @@
+
+{
+	"buildFiles" : [ "/home/famgy/Project/Android/VirtualPartner/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/famgy/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"jni_vpn-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "jni_vpn",
+			"buildCommand" : "/home/famgy/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64 --target jni_vpn",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/home/famgy/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/famgy/Android/Sdk/ndk-bundle/sysroot -Djni_vpn_EXPORTS  -isystem /home/famgy/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/famgy/Project/Android/VirtualPartner/app/src/main/jni/vpn/jni_vpn.c",
+					"workingDirectory" : "/home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/home/famgy/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/famgy/Android/Sdk/ndk-bundle/sysroot -Djni_vpn_EXPORTS  -isystem /home/famgy/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/famgy/Project/Android/VirtualPartner/app/src/main/jni/vpn/common.c",
+					"workingDirectory" : "/home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/home/famgy/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/famgy/Android/Sdk/ndk-bundle/sysroot -Djni_vpn_EXPORTS  -isystem /home/famgy/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/famgy/Project/Android/VirtualPartner/app/src/main/jni/vpn/vpn_main.c",
+					"workingDirectory" : "/home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64"
+				}
+			],
+			"output" : "/home/famgy/Project/Android/VirtualPartner/app/build/intermediates/cmake/debug/obj/x86_64/libjni_vpn.so",
+			"toolchain" : "13022390367952803589"
+		},
+		"native-lib-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/famgy/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/home/famgy/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/famgy/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/famgy/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/famgy/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/include -isystem /home/famgy/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/famgy/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/famgy/Project/Android/VirtualPartner/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/famgy/Project/Android/VirtualPartner/app/.externalNativeBuild/cmake/debug/x86_64"
+				}
+			],
+			"output" : "/home/famgy/Project/Android/VirtualPartner/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so",
+			"toolchain" : "13022390367952803589"
+		}
+	},
+	"toolchains" : 
+	{
+		"13022390367952803589" : 
+		{
+			"cCompilerExecutable" : "/home/famgy/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/famgy/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

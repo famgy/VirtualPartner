@@ -113,7 +113,8 @@ public class AESEncryptUtil {
         byte[] paramArrayOfBytes = AESEncrypt(paramArrayOfByte, paramString.getBytes());
 
         Log.d("jw","paramArrayOfBytes == "+paramArrayOfBytes.toString());
-        return new String(paramArrayOfBytes, 0, paramArrayOfBytes.length);
+
+        return new String(Base64.encode(paramArrayOfBytes, 2));
     }
 
     /**

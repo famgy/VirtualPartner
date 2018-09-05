@@ -64,48 +64,52 @@
 
 
 
+
+
     <TextView
-        android:id="@+id/tv_text2"
+        android:id="@+id/tv_content2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_cipherText"
+        android:layout_below="@id/btn_getContent"
         android:layout_marginTop="30dp"
         android:text="明 文："
         android:textColor="#000"
         android:textSize="20sp" />
     <EditText
-        android:id="@+id/tv_content2"
+        android:id="@+id/et_content2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ture"
+        android:text="true"
         android:textSize="20sp"
         android:gravity="center"
-        android:layout_toRightOf="@id/tv_text"
-        android:layout_alignBaseline="@id/tv_text"/>
+        android:layout_toRightOf="@id/tv_content2"
+        android:layout_alignBaseline="@id/tv_content2"/>
 
     <TextView
-        android:id="@+id/tv_cipherText2"
+        android:id="@+id/tv_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_androidID"
+        android:layout_below="@id/et_content2"
         android:layout_marginTop="20dp"
         android:text="密 文："
         android:textColor="#000"
         android:textSize="20sp"/>
     <TextView
-        android:id="@+id/et_cipherText2"
+        android:id="@+id/tv_cipherText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="这里是密文"
-        android:layout_alignBaseline="@id/tv_cipherText"
+        android:textSize="20sp"
         android:gravity="center"
-        android:layout_toRightOf="@id/tv_cipherText"/>
+        android:layout_toRightOf="@id/tv_text2"
+        android:layout_alignBaseline="@id/tv_text2"/>
+
 
     <Button
         android:id="@+id/btn_getContent2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_text"
+        android:layout_below="@id/tv_cipherText2"
         android:layout_marginTop="10dp"
         android:text="生成密文"
         android:gravity="center" />

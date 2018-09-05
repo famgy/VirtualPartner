@@ -1,0 +1,19 @@
+# ninja log v5
+0	691	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	8df2070ea942b5e6
+692	873	0	../../../../build/intermediates/cmake/release/obj/x86_64/libnative-lib.so	eea90f0d7931a308
+0	235	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	2b68d36bfd17b4bb
+0	237	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	a29ee7e897f82a6d
+0	253	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	7d8612f1b6e86a81
+253	262	0	../../../../build/intermediates/cmake/release/obj/x86_64/libjni_vpn.so	96724a24f8c41c61
+1	290	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	8df2070ea942b5e6
+290	340	0	../../../../build/intermediates/cmake/release/obj/x86_64/libnative-lib.so	eea90f0d7931a308
+1	171	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	2b68d36bfd17b4bb
+0	188	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	7d8612f1b6e86a81
+0	191	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	a29ee7e897f82a6d
+191	204	0	../../../../build/intermediates/cmake/release/obj/x86_64/libjni_vpn.so	96724a24f8c41c61
+1	231	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	8df2070ea942b5e6
+231	268	0	../../../../build/intermediates/cmake/release/obj/x86_64/libnative-lib.so	eea90f0d7931a308
+0	46	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	7d8612f1b6e86a81
+0	47	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	2b68d36bfd17b4bb
+0	55	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	a29ee7e897f82a6d
+55	64	0	../../../../build/intermediates/cmake/release/obj/x86_64/libjni_vpn.so	96724a24f8c41c61

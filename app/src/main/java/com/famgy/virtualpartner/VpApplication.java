@@ -24,33 +24,33 @@ public class VpApplication extends Application{
     public void onCreate() {
         super.onCreate();
 
-        LitePal.initialize(this);
-        appAction = new AppActionImpl(this);
-        appAction.getAreaInfo(addressChina, "province", new ActionCallbackListener<ArrayList<String>>() {
-            @Override
-            public void onSuccess(ArrayList<String> data) {
-                for (String addressProvince : data) {
-                    appAction.getAreaInfo(addressProvince, "city", new ActionCallbackListener<ArrayList<String>>() {
-                        @Override
-                        public void onSuccess(ArrayList<String> data) {
-                            for (String addressCity : data) {
-                                appAction.getAreaInfo(addressCity, "county", null);
-                            }
-                        }
-
-                        @Override
-                        public void onFailure(String errorEvent, String message) {
-
-                        }
-                    });
-                }
-            }
-
-            @Override
-            public void onFailure(String errorEvent, String message) {
-
-            }
-        });
+//        LitePal.initialize(this);
+//        appAction = new AppActionImpl(this);
+//        appAction.getAreaInfo(addressChina, "province", new ActionCallbackListener<ArrayList<String>>() {
+//            @Override
+//            public void onSuccess(ArrayList<String> data) {
+//                for (String addressProvince : data) {
+//                    appAction.getAreaInfo(addressProvince, "city", new ActionCallbackListener<ArrayList<String>>() {
+//                        @Override
+//                        public void onSuccess(ArrayList<String> data) {
+//                            for (String addressCity : data) {
+//                                appAction.getAreaInfo(addressCity, "county", null);
+//                            }
+//                        }
+//
+//                        @Override
+//                        public void onFailure(String errorEvent, String message) {
+//
+//                        }
+//                    });
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(String errorEvent, String message) {
+//
+//            }
+//        });
     }
 
     public AppAction getAppAction() {

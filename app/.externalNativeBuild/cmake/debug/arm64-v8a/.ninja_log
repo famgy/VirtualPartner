@@ -1,0 +1,25 @@
+# ninja log v5
+0	204	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	79c6df7272ac5f34
+204	446	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	78812f7edc3dac8f
+0	30	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	59bbfb7a2f0c9aad
+0	45	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	868837d713d47b1f
+0	50	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	8a0845291f42875e
+50	67	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libjni_vpn.so	d2b4203222efb933
+9	223	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	79c6df7272ac5f34
+223	546	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	78812f7edc3dac8f
+0	57	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	59bbfb7a2f0c9aad
+0	69	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	868837d713d47b1f
+0	80	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	8a0845291f42875e
+80	93	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libjni_vpn.so	d2b4203222efb933
+0	212	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	79c6df7272ac5f34
+213	682	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	78812f7edc3dac8f
+0	110	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	59bbfb7a2f0c9aad
+0	122	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	868837d713d47b1f
+0	133	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	8a0845291f42875e
+133	146	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libjni_vpn.so	d2b4203222efb933
+8	282	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	79c6df7272ac5f34
+282	613	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	78812f7edc3dac8f
+0	70	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	59bbfb7a2f0c9aad
+0	82	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	868837d713d47b1f
+0	93	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	8a0845291f42875e
+93	109	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libjni_vpn.so	d2b4203222efb933

@@ -1,0 +1,25 @@
+# ninja log v5
+0	61	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	afe6fdd11607ca1d
+0	86	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	d4e37de0498c344d
+0	95	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	889c611caba451f4
+95	160	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libjni_vpn.so	700e006bd443bc31
+0	180	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	34ac17eff3cf140a
+180	356	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	7c2950dc020b0361
+21	1341	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	d4e37de0498c344d
+22	1341	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	afe6fdd11607ca1d
+21	1342	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	889c611caba451f4
+1342	1527	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libjni_vpn.so	700e006bd443bc31
+1	1177	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	34ac17eff3cf140a
+1177	1422	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	7c2950dc020b0361
+0	1024	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	afe6fdd11607ca1d
+0	1030	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	889c611caba451f4
+0	1030	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	d4e37de0498c344d
+1030	1227	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libjni_vpn.so	700e006bd443bc31
+1	1594	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	34ac17eff3cf140a
+1595	1769	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	7c2950dc020b0361
+9	2078	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/vpn_main.c.o	afe6fdd11607ca1d
+9	2110	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/common.c.o	d4e37de0498c344d
+8	2111	0	CMakeFiles/jni_vpn.dir/src/main/jni/vpn/jni_vpn.c.o	889c611caba451f4
+2111	2348	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libjni_vpn.so	700e006bd443bc31
+0	2668	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	34ac17eff3cf140a
+2668	2846	0	../../../../build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	7c2950dc020b0361
